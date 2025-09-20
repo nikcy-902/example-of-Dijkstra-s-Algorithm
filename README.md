@@ -14,4 +14,15 @@ reversed comparison operator breaks priority ordering
 
 
 and i have used the online compiler to execute the code.
-        
+
+example output
+
+Type the beginning label (A-E): A
+
+Type the target label (A-E): C
+
+Route from A to C is: A -> B -> C with total cost 3
+
+finally what i understood is
+
+It determines the path of the narrowest distance between two nodes in a weighted graph and reveals the minimum cost as well as the path.
