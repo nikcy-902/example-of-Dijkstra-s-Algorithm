@@ -19,7 +19,7 @@ struct RouteNode {
     int totalWeight;
     vector<string> routeTrace;
     bool operator>(const RouteNode& rhs) const { return totalWeight > rhs.totalWeight; }
-};
+};   // reversed comparison operator breaks priority ordering so used correct comparison operater
 
 pair<int, vector<string>> findMinimumRoute(const string& origin, const string& destination) {
     priority_queue<RouteNode, vector<RouteNode>, greater<RouteNode>> nextRoutes;
